@@ -1,0 +1,88 @@
+
+
+* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  background-image: url(images/wallpaper2.jpg);
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+}
+#mySidenav a{
+  position: absolute; 
+  left:-105px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0; 
+
+}
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+#home{
+  top: 20px;
+  background-color: peachpuff;
+}
+#courses{
+  top: 80px; 
+  background-color:lavender; 
+}
+#De-stress{
+  top: 140px;
+  background-color: pink;
+}
+#community{
+  top: 200px;
+  background-color:thistle; 
+}

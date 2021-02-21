@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FitSpire | Courses</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.para{
+  line-height:2; 
+}
+.coursesPage{
+  margin-left:90px; 
+}
+.signUp {
+  padding-left:500px;  
+}
+.signUp button{
+  padding: 15px 24px; 
+  background-color:lavender ;
+  border:lavenderBlush ;
+  color:black;
+  cursor:pointer; 
+  float:left; 
+}
+.signUp button:hover{
+  background-color:lavenderBlush;
+  border: lavender;
+}
+.fa{
+  padding:20px; 
+  font-size: 30px; 
+  width: 50px; 
+  text-align: center; 
+  text-decoration:none; 
+
+}
+.fa:hover{
+  opacity: 0.7; 
+}
+.fa -facebook{
+  background-color:#3B5998; 
+  color:white; 
+}
+.fa -instagram{
+  background-color:#f09433; 
+  color:white; 
+} 
+.fa -pinterest{
+  background-color: #cb2027; 
+  color: white; 
+}    
+#mySidenav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  }
+button
+    {
+      background-color: lightCoral; 
+      border:none; 
+      color:white;
+      padding: 15px 32px; 
+      text-align: center; 
+      text-decoration:none; 
+      display: inline-block; 
+      font-size: 16px; 
+    }
+    .button:hover {
+      background-color: linen; 
+      color: black;
+    }
+.selection{
+      padding-left:150px; 
+      box-sizing: none;
+}
+.socialMedia{
+  padding-left: 110px; 
+}
+ 
+</style> 
+  </head>
+<body> 
+  <div id ="mySidenav" class= "sidenav"> 
+      <a href ="index.html" id="home"> Home </a>
+      <a href ="courses.html" id="courses">Courses</a>
+      <a href ="de-stress.html"id="De-stress">De-Stress</a>
+      <a href ="community.html" id="community">Community </a>
+    </div> 
+  <h1 style="text-align:center;"> Courses </h1>
+  <p style ="padding-left:50px;padding-right:50px;color:gray;"class="para"> You are in the right place! Woohoo! We are more than happy to share the journey with you. Are you ready to become your best version? Classes here are customisable so that it matches your values and goals. Together we can crash those goals. This semester, you will work to develop your writing, reading, vocabulary and critical thinking skills. You
+will also learn and practice the fundamentals of grammar and mechanics.The skills you learn here will
+help you succeed both in and out of class. However, your education is ultimately YOUR responsibility.
+YOU determine your level of success. Successful college students are self-motivated.<em> YOU CAN DO IT and we are here to help.</em> </p> 
+<br>
+<div class ="coursesPage"> 
+<div  style="max-width:1100px">
+  <img src="images/course1.png"class ="course1" align='left' alt="About Us" width="300" height="200" style="margin:10px 150px;">
+  <h2 style ="padding-left: 150px;">Course #1:10 Things I Love About Yoga</h1>
+  <p style="padding-right:50px;color:gray;"class="para"> Suitable for all levels, this 60 min Vinyasa flow will leave you feeling a balance of strength and serenity, spirit and sweat. You are warmly encouraged to practice at your pace, have fun, and challenge your self while honoring your body. Clear your mind, rinse and strengthen your body, increase flexibility, and fuel your spirit! Lets flow! </p>
+  <div class ="signUp">
+  <button id="signup" class="open-form" onclick ="openForm()"> Sign Up</button>
+  <style>
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Sign Up</h1>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Sign Up</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+  </div>
+<br><br><br>
+<hr>
+<br><br>
+<div>
+  <img src="images/thorcise.jpg" align='right' alt="Thorcise" width="300" height="200">
+</div>
+<h2 style="padding-left:150px;">Course #2: Thorcise</h2>
+<p style="padding-right:350px; padding-left:150px;color:gray;" class="para">Fat Blast is a mix between low and high-intensity interval training that focuses on full-body strength conditioning paired with cardio bursts. It uses a mix of interval training and circuit training formats combined with fun cardio routines that incorporate elements of endurance training, calisthenics, and strength training to help develop overall body fitness. </p> 
+<div class ="signUp">
+  <button id="signup"class="open-form" onclick ="openForm()"> Sign Up</button>
+</div> 
+<br><br><br>
+<hr>
+<br><br>
+<img src="images/rockExercise.jpg"class ="course1" align='left' alt="The Rock" width="300" height="200" style="margin:10px 150px;">
+  <h2 style ="padding-left: 150px;">Course #3:The Rock Exercise</h1>
+  <p style="padding-right:50px;color:gray;"class="para"> Being strong makes everything else easier. Resistance training promotes the growth of lean muscle mass, which in turn helps cultivate a healthier metabolism. The more muscle your body has, the more calories it will burn at rest. In this class, we will use dumbbells, barbells, kettlebells and more to work through basic patterns. </p>
+  <div class ="signUp">
+  <button id="signup"class="open-form" onclick ="openForm()"> Sign Up</button>
+  </div>
+<br><br><br>
+<hr>
+<br><br>
+<div class="contact" id="contact">
+    <h1 style ="padding-left: 150px;">Contact</h1>
+    <p style="color:gray;padding-left: 150px;">We provide fitness classes for students, workshops on how to find balance, and other stuff needed in a student's life. Please feel free to assign a date, and we can set up a time and have a meeting on which classes would best fit you. This would take no more than 5 minute. Hope to see you there!</p>
+<div class ="selection">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="input" type="datetime-local" placeholder="Date and time" required name="date" value="2021-2-21T20:00"></p>
+      <p><input class="input" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="button" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  <div class ="socialMedia">
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterst.com/" class ="fa fa-pinterest"></a>
+</div> 
+</div>
+</div>
+</body>
+</html> 

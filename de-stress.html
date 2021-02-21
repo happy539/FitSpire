@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FitSpire | De-Stress</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+.fa{
+  padding:20px; 
+  font-size: 30px; 
+  width: 50px; 
+  text-align: center; 
+  text-decoration:none; 
+}
+.fa:hover{
+  opacity: 0.7; 
+}
+.fa -facebook{
+  background-color:#3B5998; 
+  color:white; 
+}
+.fa -instagram{
+  background-color:#f09433; 
+  color:white; 
+} 
+.fa -pinterest{
+  background-color: #cb2027; 
+  color: white; 
+}    
+h2{
+  text-align:center; 
+  } 
+  p{
+    color:gray; 
+    font-family: americanTypewriter, serif; 
+    }
+    .options{
+      padding-left:400px; 
+    }
+    .options button{  
+      padding: 15px 24px;  
+      background-color: lightCoral; 
+      border: 1px solid SeaShell; 
+      color:white; 
+      cursor: pointer; 
+      float: left; 
+      margin: 5px; 
+
+    }
+    .options button:hover{
+      background-color: linen; 
+      color: black; 
+      border: 1px solid lightYellow; 
+
+    }
+    body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+} 
+#mySidenav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+    </style> 
+  </head>
+  <div class="destress">
+  <body> 
+    <h1 style="text-align:center;font-family:jazzLET,fantasy;"> De-Stress with us! </h1> 
+    <p style="text-align:center;" > What's a better way to de-stress than just play games,  funny jokes and hear some motivational quotes?</p1> 
+    <div id ="mySidenav" class= "sidenav"> 
+      <a href ="index.html" id="home"> Home </a>
+      <a href ="courses.html" id="courses">Courses</a>
+      <a href ="de-stress.html"id="De-stress">De-Stress</a>
+      <a href ="community.html" id="community">Community </a>
+    </div> 
+    <div class="options"> 
+      <button id="tictac"> Tic Tac Toe </button> 
+      <button id="rps">Rock Paper Scissor</button> 
+      <button id="jokes">Jokes/Quotes </button>
+      <button id="draw"> Draw </button> 
+      <button id="music"> Music </button>
+    </div> 
+    <img src="images/de-stress1.png" style="display:block; margin-left:auto; margin-right:auto; width:90%; height:500px;">
+    <br><br><br>
+    <button id="goUp" style="background-color:white; border:2px solid white; margin-left:1300px;"> <img id="arrow" style="width:40px;height:60px;" src="images/arrow2.png"><br> Back to Top </button>  
+    <style>
+      #goUp{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+    </style> 
+    <script> 
+    //Variables 
+    var tictac = document.getElementById("tictac");
+    var rps = document.getElementById("rps");
+    var jokes = document.getElementById("jokes");
+    var draw = document.getElementById("draw");
+    var music = document.getElementById("music");
+    var goUp = document.getElementById('goUp');
+
+    //functions
+    function scroll_tic(){
+      window.scrollTo(0,850);
+    }
+    function scroll_rps(){
+      window.scrollTo(0,1600);
+    }
+    function scroll_jokes(){
+      window.scrollTo(0,2300);
+    }
+    function scroll_draw(){
+      window.scrollTo(0,3030);
+    }
+    function scroll_music(){
+      window.scrollTo(0,3700);
+    }
+    function home(){
+      window.scrollTo(0,0);
+    }
+
+    //Clicking the buttons
+    tictac.addEventListener("click",scroll_tic);
+    rps.addEventListener("click",scroll_rps);
+    jokes.addEventListener("click",scroll_jokes);
+    draw.addEventListener("click",scroll_draw);
+    music.addEventListener("click",scroll_music);
+    goUp.addEventListener("click",home);
+    </script> 
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h2> Tic Tac Toe </h2>
+    <br><br>
+    <iframe height="600px" width="100%" src="https://repl.it/@SahanaGokulakri/TicTacToe?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    <hr>
+    <br>
+    <h2> Rock Paper Scissor </h2>
+    <iframe height="600px" width="100%" src="https://repl.it/@SahanaGokulakri/rockPaperScissor?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    <hr>
+    <br><br><br>
+    <h2>Jokes and Quotes</h2>
+    <iframe height="600px" width="100%" src="https://repl.it/@SahanaGokulakri/Quotesjokes?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+  <hr>
+  <h2> Draw </h2> 
+  <iframe src="https://trinket.io/embed/python/e18ade926c?outputOnly=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <hr> 
+  <br>
+  <h2> Music </h2> 
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUSyphfcc6aL" width="700" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+ <iframe style="margin-left:10px;"src="https://open.spotify.com/embed/playlist/37i9dQZF1DXci7j0DJQgGp" width="700" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<br><br>
+<hr>
+<br>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterst.com/" class ="fa fa-pinterest"></a>
+    
+  </body> 
+  </html> 

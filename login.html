@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <div class="page" style=" 'Times New Roman', Georgia, Serif;letter-spacing:2px;"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FitSpire | Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1 style="text-align:center;"> Welcome Back! </h1>
+  </body> 
+  <form>
+    <label for="email"><b> Email </b> </label>
+    <br><br>
+    <input type="email" id="email" placeholder="Enter your email" name="email" required> 
+    <br><br>
+    <label for="login-pwd"> <b> Password</b></label> 
+    <br><br>
+    <input type="password" id="login-pwd" placeholder="Enter your password" name="login-pwd" required>  
+    <br><br>
+    <input type="checkbox" onclick="show()">Show Password
+  </form> 
+  <br> 
+  <br> 
+  <a href="signUp.html"> Don't have an account? Sign up now! </a> 
+  <br>
+  <br> 
+  <input type="submit" value="Login" onclick="window.location.href='courses.html'"> 
+ <script> 
+ function show() {
+  var password = document.getElementById("login-pwd");
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
+</script>
+<style> 
+input[type="text"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type="text"]::placeholder{
+  font-size:16px;
+}
+input[type="email"]{
+  width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+input[type="email"]::placeholder{
+  font-size:16px;
+}
+input[type="password"]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+input[type="password"]::placeholder{
+  font-size:16px;
+}
+label{
+  display:inline-block;
+  padding: 10px 18px;
+  font-size: 20px;
+}
+input[type="submit"]{
+  width: 150px;
+  height: 50px; 
+  background-color: #ff99a8;
+  border: 5px solid white;
+  color: white;
+}
+input[type="submit"]:hover{
+  background-color: white; 
+  color: #ff99a8;
+  border: 5px solid #ff99a8; 
+}
+
+b {
+  font-size: 24px;
+}
+
+.page {
+  background-image: url('images/wallpaper2.jpg');
+}
+</style> 
+</div> 
+</html>
